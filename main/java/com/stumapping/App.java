@@ -15,14 +15,6 @@ public class App
 {
     public static void main( String[] args )
     {
-        Configuration con=new Configuration().configure()
-        		.addAnnotatedClass(student.class).addAnnotatedClass(car.class);
-        
-        
-        SessionFactory sf=con.buildSessionFactory();
-        
-        Session ses=sf.openSession();
-        Transaction tx=ses.beginTransaction();
        
 //        car c1=new car();
 //        c1.setCarId(101);

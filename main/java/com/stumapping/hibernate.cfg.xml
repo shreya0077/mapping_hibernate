@@ -9,6 +9,6 @@
         <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/mapping</property>
         <property name="hibernate.connection.username">root</property>
         <property name="hibernate.dialect">org.hibernate.dialect.MySQL5Dialect</property>
-        <property name="hbm2ddl.auto"></property>
+        <property name="hbm2ddl.auto">create</property>
     </session-factory>
 </hibernate-configuration>
