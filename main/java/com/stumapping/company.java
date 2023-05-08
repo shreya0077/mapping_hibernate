@@ -61,13 +61,14 @@ public class company {
 //	ses.save(e2);
         
       Query qu=ses.createQuery("from employee");
-      
+     
+      //to get list of employee
       List<employee> emplist=qu.getResultList();
       
       for(employee emp:emplist)
       {
     	 
-    	  
+    	  //to get list of projects of a employee
     	  List<projects> pp=emp.getProject();
     	  for(projects p:pp)
     		  System.out.print(emp.getEmpName()+" is working "+p.getProjectName());
